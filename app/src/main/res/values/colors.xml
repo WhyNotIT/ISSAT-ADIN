@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorPrimaryLight">#EF5350</color>
+    <color name="colorListSeancesBg">#ffffff</color>
+    <color name="colorAbscent">#FFCDD2</color>
+    <color name="colorAbscenceGroupe">#FFF9C4</color>
+    <color name="textColorPrimary">#00181b</color>
+    <color name="black">#00181b</color>
+    <color name="header_bg">#EF5350</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorFab">#F50057</color>
+    <color name="textInputSelected">#424242</color>
+    <color name="button_text_color">#F50057</color>
+    <color name="withe">#ffffff</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="grey_fonce">#9E9E9E</color>
+    <color name="grey_transparent">#80E0E0E0</color>
+    <color name="grey_dark">#424242</color>
+    <color name="textColorHint">#212121</color>
+    <color name="colorPrimaryText">#ffffff</color>
+    <color name="shadow_grey">#50424242</color>
+
+
+</resources>

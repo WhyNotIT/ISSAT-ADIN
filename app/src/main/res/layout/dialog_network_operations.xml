@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryLight"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="24dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/dialog_icone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_remove_user_withe"/>
+
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aucun utilisateur enregistré!"
+                android:textSize="18sp"
+                android:textColor="@color/withe"
+                android:visibility="visible"/>
+
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/dialog_loading_animation"
+                style="@style/AVLoadingIndicatorView.Small"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="visible"
+                app:indicatorColor="@color/withe"
+                app:indicatorName="BallPulseIndicator"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_dialog_buttons"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/dialog_annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="end"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:text="Annuler"
+                android:visibility="gone"
+                android:textColor="@color/withe"/>
+
+            <Button
+                android:id="@+id/dialog_confirmer"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="end"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:text="Confirmer"
+                android:visibility="gone"
+                android:textColor="@color/withe"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

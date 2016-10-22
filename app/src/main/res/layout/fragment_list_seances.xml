@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/item_seance_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/withe">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <LinearLayout android:id="@+id/ll"
+                          android:layout_width="match_parent"
+                          android:layout_height="?actionBarSize"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+                          android:background="@color/grey" >
+
+                <TextView
+                    android:id="@+id/RowTitreFiliere"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:text="Filière"
+                    android:textColor="@color/grey_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/RowTitreEnseignant"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:layout_height="wrap_content"
+                    android:maxLength="25"
+                    android:text="Enseignant"
+                    android:textColor="@color/grey_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/RowTitreMatiere"
+                    android:layout_width="0dp"
+                    android:layout_weight="45"
+                    android:layout_height="wrap_content"
+                    android:text="Matiére"
+                    android:textColor="@color/grey_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/RowTitreSalle"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:layout_height="wrap_content"
+                    android:text="Salle"
+                    android:textColor="@color/grey_dark"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listViewSeance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="60dp"/>
+
+            </LinearLayout>
+
+    </FrameLayout>

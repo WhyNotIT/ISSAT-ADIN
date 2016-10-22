@@ -1,0 +1,16 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/database_info"
+        app:showAsAction="always"
+        android:title="Info"
+        android:icon="@drawable/ic_info"/>
+
+    <item
+    android:id="@+id/espace_admin"
+    app:showAsAction="always"
+    android:title="Espace admin"
+        android:icon="@drawable/ic_lock"/>
+
+</menu>

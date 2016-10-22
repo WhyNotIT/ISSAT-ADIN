@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/contenu_news"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        style="@style/TaxistCardViewStyle"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/news_bg"
+                >
+
+                <LinearLayout
+                    android:paddingBottom="60dp"
+                    android:paddingTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="16dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/news_titre"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_titre_withe"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/withe"
+                        android:textSize="18sp"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/news_contenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_sujet_withe"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/withe"
+                        android:textSize="18sp"
+                        android:visibility="visible"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/shadow_grey"
+                        >
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/news_likes_nb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:drawableStart="@drawable/ic_like"
+                            android:textColor="@color/withe"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/news_dislikes_nb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:padding="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:gravity="center"
+                            android:drawableStart="@drawable/ic_dislike"
+                            android:textColor="@color/withe"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/news_comments_nb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="0"
+                            android:gravity="center"
+                            android:drawableStart="@drawable/ic_comment_grey"
+                            android:textColor="@color/withe"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loading_comments"
+                style="@style/AVLoadingIndicatorView.Small"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="BallPulseIndicator"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
