@@ -94,7 +94,7 @@ public class NetworkManager implements EasyPermissions.PermissionCallbacks {
             initOkHttpClient(activity);
         }
 
-        final String URL_INSERT_TOKEN = activity.getString(R.string.host) + "/new_news_added.php";
+        final String URL_INSERT_TOKEN = activity.getString(R.string.host) + "/url.php";
 
         List<String> values = new ArrayList<>();
         values.add("titre");
@@ -134,7 +134,7 @@ public class NetworkManager implements EasyPermissions.PermissionCallbacks {
 
         MultipartBuilder requestBody = new MultipartBuilder()
                 .type(MultipartBuilder.FORM)
-                .addFormDataPart("92IP", "NbTyy968vVON-d3oprebTobeBS89Mfqs");
+                .addFormDataPart("key", "value");
 
         for (int i = 0; i < values.size(); i += 2) {
             Log.e("POST",values.get(i) +" => " + values.get(i + 1));
